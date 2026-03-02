@@ -1,4 +1,4 @@
-import heroImg from '../img/Grace.jpg'
+import heroImg from '../img/presen.jpeg'
 
 function Hero() {
   return (
