@@ -7,7 +7,7 @@ function Footer() {
         </p>
         <div className="flex items-center gap-3 text-sm">
           <a
-            href="mailto:amiableamara004@gmail.com"
+            href="mailto:amaratheaeva01@gmail.com"
             className="inline-flex items-center gap-1.5 text-brandGold hover:text-slate-100"
           >
             <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">

@@ -43,29 +43,13 @@ function About() {
           I don't just support your business. I help it breathe.
         </p>
         <dl className="grid gap-4 text-sm sm:grid-cols-2">
-          <div>
-            <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Name</dt>
-            <dd className="text-slate-800">Amarachi P. Emeka-Eze</dd>
-          </div>
-          <div>
-            <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Location</dt>
-            <dd className="text-slate-800">Lagos, Nigeria</dd>
-          </div>
-          <div>
-            <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Email</dt>
-            <dd>
-              <a href="mailto:amiableamara004@gmail.com" className="text-brandBlueDark hover:text-brandBlue">
-                amiableamara004@gmail.com
-              </a>
-            </dd>
-          </div>
-          <div>
-            <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Languages</dt>
-            <dd className="text-slate-800">English (Fluent), Yoruba (Fluent)</dd>
-          </div>
-          <div>
-            <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Availability</dt>
-            <dd className="text-slate-800">Full-time, Hybrid, Contract</dd>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="#contact"
+              className="rounded-full bg-brandBlue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
+            >
+              Work With Me
+            </a>
           </div>
         </dl>
       </div>

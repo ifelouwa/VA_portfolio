@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section id="projects" className="space-y-8">
       <div>
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">Selected work</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">MY WORK</h2>
         <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
       </div>
       <div className="grid gap-6 md:grid-cols-2">
