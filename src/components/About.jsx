@@ -18,18 +18,34 @@ function About() {
           <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
         </div>
         <p className="text-base text-slate-700 sm:text-lg">
-          I&apos;m an English Language undergraduate turned Virtual Assistant with a passion for education. Having seen
-          how educators juggle endless backend tasks alongside teaching, I specialize in building streamlined systems
-          that make learning smoother.
+          I&apos;m Amarachi P. Emeka-Eze, a detail-driven Administrative Virtual Assistant based in Lagos, 
+          Nigeria, with a passion for bringing order to the professional lives of busy founders and executives.
         </p>
         <p className="text-base text-slate-700 sm:text-lg">
-          I support coaches, educators, online academies, and EdTech startups by handling the operations behind the
-          scenes, so you can focus on what you do best: teaching and transforming lives.
+          My background spans academic administration, social media and project management, 
+          and formal VA training through TechCrush Academy (accredited by the American Council of Training and Development, USA) 
+          and the She Leads Africa BoostHer Executive Virtual Assistance Program.
+        </p>
+        <p className="text-base text-slate-700 sm:text-lg">
+          These experiences didn't just teach me tools, they taught me how to think strategically, 
+          act proactively, and protect my client's time like it's my own.
+        </p>
+        <p className="text-base text-slate-700 sm:text-lg">
+          I work with founders, startup teams, and CEOs who need more than someone to tick boxes. 
+          They need a thinking partner who anticipates needs, solves problems quietly, 
+          and keeps everything running smoothly behind the scenes.
+        </p>
+        <p className="text-base text-slate-700 sm:text-lg">
+          When I'm not organizing inboxes or building workflows, 
+          I'm sharpening my communication and analytical skills through my B.A. in English Language at Lagos State University of Education.
+        </p>
+        <p className="text-base text-slate-700 sm:text-lg font-bold italic">
+          I don't just support your business. I help it breathe.
         </p>
         <dl className="grid gap-4 text-sm sm:grid-cols-2">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Name</dt>
-            <dd className="text-slate-800">Amarachi Emeka-Eze</dd>
+            <dd className="text-slate-800">Amarachi P. Emeka-Eze</dd>
           </div>
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Location</dt>

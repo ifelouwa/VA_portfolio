@@ -3,7 +3,7 @@ function Footer() {
     <footer className="border-t border-brandBlue/30 bg-brandBlueDark py-6 text-sm text-slate-100">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 sm:flex-row">
         <p className="text-xs text-slate-100">
-          © 2025 Primordial Core. All rights reserved. Website for Amarachi Emeka-Eze.
+          © 2025 Primordial Core. All rights reserved. Website for Amarachi P. Emeka-Eze.
         </p>
         <div className="flex items-center gap-3 text-sm">
           <a
