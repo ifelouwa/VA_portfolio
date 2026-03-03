@@ -10,7 +10,7 @@ function Footer() {
             href="mailto:amaratheaeva01@gmail.com"
             className="inline-flex items-center gap-1.5 text-brandGold hover:text-slate-100"
           >
-            <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
+            <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
               <rect
                 x="4.75"
                 y="6.75"
@@ -39,7 +39,7 @@ function Footer() {
             rel="noreferrer"
             className="inline-flex items-center gap-1.5 text-brandGold hover:text-slate-100"
           >
-            <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
+            <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
               <rect
                 x="4.75"
                 y="4.75"

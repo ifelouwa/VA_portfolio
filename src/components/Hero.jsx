@@ -20,14 +20,14 @@ function Hero() {
           I'm Amarachi, an Administrative Virtual Assistant who helps founders, startups, and CEOs reclaim their time, organize their operations, and show up fully to what matters most.
         </p>
         <div className="flex flex-wrap gap-3">
-          <a
-            href="#contact"
+          <button
+            onClick={() => window.Calendly.initPopupWidget({ url: 'https://calendly.com/amaratheaeva01/discovery-call' })}
             className="rounded-full bg-brandBlue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
           >
             Work With Me
-          </a>
+          </button>
           <a
-            href="#services"
+            href="#projects"
             className="rounded-full border border-brandBlue px-5 py-2.5 text-sm font-semibold text-brandBlue hover:bg-brandBlue/5"
           >
             See My Work

@@ -52,9 +52,56 @@ function Skills() {
             d="M9 5.5v13M13 5.5v13M6 10h12M6 13.5h12"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.3"
+            strokeWidth="1.5"
             strokeLinecap="round"
           />
+        </svg>
+      )
+    }
+
+    if (tool === 'Trello') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <rect x="6" y="6" width="4" height="10" rx="1" fill="currentColor" />
+          <rect x="14" y="6" width="4" height="6" rx="1" fill="currentColor" opacity="0.5" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Airtable') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
+          <path d="M12 3l9 5v8l-9 5-9-5V8l9-5z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M12 12l9-5M12 12l-9-5M12 12v9" stroke="currentColor" strokeWidth="1.5" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Notion') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
+          <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M7 9v6M7 9l3 6M13 9v6M13 9l3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Tally') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
+          <path d="M5 5h14v14H5z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M9 8v8M12 8v8M15 8v8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Calendly') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" strokeWidth="1.5" />
+          <circle cx="12" cy="14" r="2" fill="currentColor" />
         </svg>
       )
     }
@@ -108,7 +155,7 @@ function Skills() {
       )
     }
     
-    if (tool === 'Zappier') {
+    if (tool === 'Zapier') {
       return (
         <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
           <rect
@@ -140,7 +187,7 @@ function Skills() {
             d="M9 5.5v2.5M9 10.25v2.5M9 7.75h-2.5M9 12.5h-2.5M15 5.5v2.5M15 10.25v2.5M15 7.75h2.5M15 12.5h2.5"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.7"
+            strokeWidth="1.5"
             strokeLinecap="round"
           />
         </svg>
@@ -170,7 +217,7 @@ function Skills() {
       )
     }
 
-    if (tool === 'Google Calender') {
+    if (tool === 'Google Calendar') {
       return (
         <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
           <path
@@ -193,7 +240,7 @@ function Skills() {
     }
 
     return (
-      <svg viewBox="0 0 24 24" className="h-7 w-7 text-brandBlue" aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
         <circle
           cx="12"
           cy="8.5"
@@ -213,12 +260,16 @@ function Skills() {
     )
   }
   const coreSkills = [
-    'Administrative support',
-    'File management',
     'Google Workspace',
-    'Zoom session support',
-    'CapCut and Clipchamp',
+    'Project & task management',
+    'File management',
+    'Database management & automation',
+    'Documentation & knowledge management',
+    'Video conferencing',
+    'Form building & data collection',
     'Time management',
+    'Scheduling & booking management',
+    'Cross-platform workflow automation',
     'Invoicing and reporting',
     'Team collaboration',
   ]
@@ -227,18 +278,21 @@ function Skills() {
     'Google Drive',
     'Google Docs',
     'Google Sheets',
+    'Trello',
+    'Airtable',
+    'Notion',
     'Zoom',
-    'CapCut',
-    'Zappier',
-    'Slack',
+    'Tally',
+    'Zapier',
+    'Calendly',
     'Telegram',
-    'Google Calender',
+    'Google Calendar',
   ]
 
   return (
     <section id="skills" className="space-y-8">
       <div>
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">Skills and tools</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">SKILLS AND TOOLS</h2>
         <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
       </div>
       <div className="grid gap-6 md:grid-cols-2">

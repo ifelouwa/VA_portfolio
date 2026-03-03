@@ -14,7 +14,7 @@ function About() {
       </div>
       <div className="space-y-6">
         <div>
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">About Amarachi</h2>
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">ABOUT Amarachi</h2>
           <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
         </div>
         <p className="text-base text-slate-700 sm:text-lg">
@@ -44,12 +44,12 @@ function About() {
         </p>
         <dl className="grid gap-4 text-sm sm:grid-cols-2">
           <div className="flex flex-wrap gap-3">
-            <a
-              href="#contact"
-              className="rounded-full bg-brandBlue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
-            >
-              Work With Me
-            </a>
+            <button
+            onClick={() => window.Calendly.initPopupWidget({ url: 'https://calendly.com/amaratheaeva01/discovery-call' })}
+            className="rounded-full bg-brandBlue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
+          >
+            Work With Me
+          </button>
           </div>
         </dl>
       </div>

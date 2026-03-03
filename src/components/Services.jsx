@@ -17,11 +17,11 @@ function Services() {
             I bring structure, priority, and clarity to your emails and calendar so you never miss what matters 
             and always show up to every meeting fully prepared.
           </p>
-          <ul className="mt-1 space-y-1 text-sm text-slate-600">
+          {/* <ul className="mt-1 space-y-1 text-sm text-slate-600">
             <li>Lesson and resource organization</li>
             <li>Class and cohort coordination</li>
             <li>Deadline and session tracking</li>
-          </ul>
+          </ul> */}
         </div>
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
           <h3 className="text-base font-semibold text-slate-900">Project & Task Management</h3>
@@ -30,11 +30,11 @@ function Services() {
             I build and manage systems that keep your team aligned, 
             your deadlines met, and your projects moving forward without you having to chase anyone for updates.
           </p>
-          <ul className="mt-1 space-y-1 text-sm text-slate-600">
+          {/* <ul className="mt-1 space-y-1 text-sm text-slate-600">
             <li>Attendance dashboards in Google Sheets</li>
             <li>Automated percentage calculations</li>
             <li>Notes for performance and feedback</li>
-          </ul>
+          </ul> */}
         </div>
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
           <h3 className="text-base font-semibold text-slate-900">Automation & Workflow Setup</h3>
@@ -43,11 +43,11 @@ function Services() {
             Tally, and more to eliminate the repetitive manual tasks eating your hours. 
             Your systems should work for you. I make sure they do.
           </p>
-          <ul className="mt-1 space-y-1 text-sm text-slate-600">
+          {/* <ul className="mt-1 space-y-1 text-sm text-slate-600">
             <li>Session coordination and reminders</li>
             <li>Documentation and recap support</li>
             <li>Simple reporting for stakeholders</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>

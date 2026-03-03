@@ -2,7 +2,7 @@ function Contact() {
   return (
     <section id="contact" className="space-y-8">
       <div>
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">Contact</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">CONTACT</h2>
         <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
         <p className="mt-3 max-w-2xl text-base text-slate-700 sm:text-lg">
           Ready to hand off the backend work so you can focus on teaching? Share a bit about your classroom, program, or
@@ -16,7 +16,7 @@ function Contact() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Email</p>
               <a
-                href="mailto:amiableamara004@gmail.com"
+                href="mailto:amaratheaeva01@gmail.com"
                 className="mt-1 inline-flex items-center gap-2 text-brandBlueDark hover:text-brandBlue"
               >
                 <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
@@ -39,7 +39,7 @@ function Contact() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span>amiableamara004@gmail.com</span>
+                <span>amaratheaeva01@gmail.com</span>
               </a>
             </div>
             <div>
@@ -86,11 +86,12 @@ function Contact() {
           </div>
         </div>
         <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <form action="https://formsubmit.co/amiableamara004@gmail.com" method="POST" className="space-y-4">
+          <form action="https://formsubmit.co/amaratheaeva01@gmail.com" method="POST" className="space-y-4">
+            <h3 className="text-base font-semibold text-slate-900">Send Me a Message</h3>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="space-y-1.5">
                 <label htmlFor="name" className="text-xs font-medium text-slate-700">
-                  Your name
+                  Full Name
                 </label>
                 <input
                   id="name"
@@ -101,7 +102,7 @@ function Contact() {
               </div>
               <div className="space-y-1.5">
                 <label htmlFor="email" className="text-xs font-medium text-slate-700">
-                  Email
+                  Email Address
                 </label>
                 <input
                   id="email"
@@ -114,26 +115,34 @@ function Contact() {
             </div>
             <div className="space-y-1.5">
               <label htmlFor="subject" className="text-xs font-medium text-slate-700">
-                Subject
+                What do you need help with?
               </label>
-              <input
+              <select
                 id="subject"
                 name="subject"
                 required
                 className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-brandBlue/20 focus:border-brandBlue focus:ring-2"
-              />
+              >
+                <option value="Email & Calendar Management">Email & Calendar Management</option>
+                <option value="Project Management">Project Management</option>
+                <option value="Automation">Automation</option>
+                <option value="File Organization">File Organization</option>
+                <option value="Design">Design</option>
+                <option value="Scheduling">Scheduling</option>
+                <option value="Itinerary Management">Itinerary Management</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
             <div className="space-y-1.5">
               <label htmlFor="message" className="text-xs font-medium text-slate-700">
-                How can I support you?
+                Tell me more about your needs
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows="4"
                 required
-                className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none ring-brandBlue/20 focus:border-brandBlue focus:ring-2"
-              />
+                className="w-full rounded-md border border-slate-200 px-3 py-0.5 text-sm outline-none ring-brandBlue/20 focus:border-brandBlue focus:ring-2"/>
             </div>
             <input type="hidden" name="_subject" value="New portfolio contact" />
             <input type="hidden" name="_template" value="table" />
