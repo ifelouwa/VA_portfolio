@@ -97,7 +97,7 @@ function Projects() {
             </p>
           </div>
         </article>
-        <article className="flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+        {/* <article className="flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
           <div className="h-48 w-full bg-slate-200">
             <img
               src={pjm}
@@ -139,7 +139,7 @@ function Projects() {
               quickly filter startups by sector or stage, and monitor application progress without confusion or manual errors.
             </p>
           </div>
-        </article>
+        </article> */}
         <article className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-slate-200 bg-slate-50 p-6 text-center">
           <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandBlue text-white">
             +
