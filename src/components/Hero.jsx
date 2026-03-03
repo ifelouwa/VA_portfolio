@@ -32,6 +32,13 @@ function Hero() {
           >
             See My Work
           </a>
+          <a
+            href="/Amarachi's_Admin_VA_CV .pdf"
+            download
+            className="rounded-full bg-brandGold px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
+          >
+            Download CV
+          </a>
         </div>
         <div className="flex flex-wrap gap-4 text-xs text-slate-500">
           <span className="inline-flex items-center gap-1">
