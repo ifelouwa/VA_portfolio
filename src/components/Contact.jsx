@@ -2,17 +2,28 @@ function Contact() {
   return (
     <section id="contact" className="space-y-8">
       <div>
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">CONTACT</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">CONTACT & BOOKING SECTION</h2>
         <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
-        <p className="mt-3 max-w-2xl text-base text-slate-700 sm:text-lg">
-          Ready to hand off the backend work so you can focus on teaching? Share a bit about your classroom, program, or
-          academy, and I&apos;ll follow up with next steps.
-        </p>
       </div>
-      <div className="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+      <div className="text-center">
         <div className="space-y-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <h3 className="text-base font-semibold text-slate-900">Direct contact</h3>
-          <div className="space-y-3 text-base text-slate-700">
+          <h3 className="text-base font-semibold text-slate-900">Ready to Get Your Time Back?</h3>
+          <p className="text-base text-slate-700">
+            Whether you need someone to manage your inbox, 
+            your systems, or keep your operations running smoothly, <br />
+            I'm here for it. Let's start with a free 30-minute discovery call.
+          </p>
+          <dl className="text-sm sm:grid-cols-2">
+            <div className="text-center">
+              <button
+              onClick={() => window.Calendly.initPopupWidget({ url: 'https://calendly.com/amaratheaeva01/discovery-call' })}
+              className="rounded-full bg-brandBlue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
+              >
+                Discovery Call
+              </button>
+            </div>
+        </dl>
+          {/* <div className="space-y-3 text-base text-slate-700">
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Email</p>
               <a
@@ -83,9 +94,9 @@ function Contact() {
             <p className="text-xs text-slate-600">
               I aim to respond within one business day to collaboration or support inquiries.
             </p>
-          </div>
+          </div> */}
         </div>
-        <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+        {/* <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
           <form action="https://formsubmit.co/amaratheaeva01@gmail.com" method="POST" className="space-y-4">
             <h3 className="text-base font-semibold text-slate-900">Send Me a Message</h3>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -169,7 +180,7 @@ function Contact() {
               Send message
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   )

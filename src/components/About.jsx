@@ -1,9 +1,7 @@
-import aboutImg from '../img/Amarachi.jpg'
-
 function About() {
   return (
-    <section id="about" className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)] lg:items-center">
-      <div className="relative overflow-hidden rounded-2xl bg-brandBlue/5 p-4 shadow-sm ring-1 ring-brandBlue/10">
+    <section id="about" className=" lg:items-center">
+      {/* <div className="relative overflow-hidden rounded-2xl bg-brandBlue/5 p-4 shadow-sm ring-1 ring-brandBlue/10">
         <div className="relative h-64 w-full overflow-hidden rounded-xl bg-brandBlue/10 sm:h-80">
           <img
             src={aboutImg}
@@ -11,45 +9,41 @@ function About() {
             className="h-full w-full object-cover"
           />
         </div>
-      </div>
+      </div> */}
       <div className="space-y-6">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">ABOUT Amarachi</h2>
           <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
         </div>
         <p className="text-base text-slate-700 sm:text-lg">
-          I&apos;m Amarachi P. Emeka-Eze, a detail-driven Administrative Virtual Assistant based in Lagos, 
-          Nigeria, with a passion for bringing order to the professional lives of busy founders and executives.
+          I&apos;m Amarachi P. Emeka-Eze, an Administrative Virtual Assistant based in Lagos, Nigeria, 
+          focused on helping founders and executives regain control of their time and operations.
         </p>
         <p className="text-base text-slate-700 sm:text-lg">
-          My background spans academic administration, social media and project management, 
-          and formal VA training through TechCrush Academy (accredited by the American Council of Training and Development, USA) 
-          and the She Leads Africa BoostHer Executive Virtual Assistance Program.
+          With a background in academic administration, project coordination, and social media management, 
+          I&apos;ve developed systems that keep workflows organized, communication clear, and priorities on track. 
+          My training through TechCrush Academy and the BoostHer Executive VA Program strengthened not just my technical skills, 
+          but my ability to think ahead, spot gaps, and take initiative without constant supervision.
         </p>
         <p className="text-base text-slate-700 sm:text-lg">
-          These experiences didn't just teach me tools, they taught me how to think strategically, 
-          act proactively, and protect my client's time like it's my own.
+         I work with founders and startup teams who are overwhelmed with moving parts 
+         and need someone they can rely on to bring structure, consistency, and calm into their daily operations.
         </p>
         <p className="text-base text-slate-700 sm:text-lg">
-          I work with founders, startup teams, and CEOs who need more than someone to tick boxes. 
-          They need a thinking partner who anticipates needs, solves problems quietly, 
-          and keeps everything running smoothly behind the scenes.
+          Whether it&apos;s managing schedules, organizing data, or streamlining processes, 
+          I focus on making work easier, faster, and more efficient behind the scenes.
         </p>
-        <p className="text-base text-slate-700 sm:text-lg">
-          When I'm not organizing inboxes or building workflows, 
-          I'm sharpening my communication and analytical skills through my B.A. in English Language at Lagos State University of Education.
-        </p>
-        <p className="text-base text-slate-700 sm:text-lg font-bold italic">
+        <p className="text-base text-slate-700 sm:text-lg font-bold italic text-center">
           I don't just support your business. I help it breathe.
         </p>
-        <dl className="grid gap-4 text-sm sm:grid-cols-2">
-          <div className="flex flex-wrap gap-3">
+        <dl className="text-sm sm:grid-cols-2">
+          <div className="text-center">
             <button
             onClick={() => window.Calendly.initPopupWidget({ url: 'https://calendly.com/amaratheaeva01/discovery-call' })}
             className="rounded-full bg-brandBlue px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brandBlueDark"
-          >
-            Work With Me
-          </button>
+            >
+              Work With Me
+            </button>
           </div>
         </dl>
       </div>

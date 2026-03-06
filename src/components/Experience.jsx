@@ -1,7 +1,7 @@
 function Experience() {
   return (
     <section id="experience" className="space-y-8">
-      <div>
+      {/* <div>
         <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">MY JOURNEY</h2>
         <div className="mt-2 h-1 w-16 rounded-full bg-brandGold" />
       </div>
@@ -46,7 +46,7 @@ function Experience() {
             <li>Communicated professionally with students, colleagues, and management supporting clear information flow.</li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

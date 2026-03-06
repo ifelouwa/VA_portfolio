@@ -13,9 +13,9 @@ function Services() {
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
           <h3 className="text-base font-semibold text-slate-900">Email & Calendar Management</h3>
           <p className="text-base text-slate-700">
-            Your inbox is not a to-do list and it shouldn't feel like one. 
-            I bring structure, priority, and clarity to your emails and calendar so you never miss what matters 
-            and always show up to every meeting fully prepared.
+            Inbox organization, priority filtering, label systems, calendar scheduling, 
+            Calendly setup, and meeting coordination, 
+            everything you need to stay on top of your communications and never miss what matters.
           </p>
           {/* <ul className="mt-1 space-y-1 text-sm text-slate-600">
             <li>Lesson and resource organization</li>
@@ -26,9 +26,9 @@ function Services() {
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
           <h3 className="text-base font-semibold text-slate-900">Project & Task Management</h3>
           <p className="text-base text-slate-700">
-            Using tools like Trello, ClickUp, and Notion, 
-            I build and manage systems that keep your team aligned, 
-            your deadlines met, and your projects moving forward without you having to chase anyone for updates.
+           Trello boards, ClickUp workflows, Notion systems, data entry, 
+           file organization, and Google Drive architecture built to keep your projects moving, 
+           your team aligned, and your information always findable.
           </p>
           {/* <ul className="mt-1 space-y-1 text-sm text-slate-600">
             <li>Attendance dashboards in Google Sheets</li>
@@ -39,9 +39,9 @@ function Services() {
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
           <h3 className="text-base font-semibold text-slate-900">Automation & Workflow Setup</h3>
           <p className="text-base text-slate-700">
-            I connect your tools Zapier, Airtable, 
-            Tally, and more to eliminate the repetitive manual tasks eating your hours. 
-            Your systems should work for you. I make sure they do.
+            Zapier automations, Airtable databases, Tally forms, 
+            Canva designs, and travel itineraries connected and optimized 
+            so your business runs efficiently with minimal manual effort.
           </p>
           {/* <ul className="mt-1 space-y-1 text-sm text-slate-600">
             <li>Session coordination and reminders</li>
