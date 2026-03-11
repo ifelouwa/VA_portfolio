@@ -56,9 +56,9 @@ function App() {
         <About />
         <Services />
         <Experience />
-        <Education />
         <Skills />
         <Projects />
+        <Education />
         <Contact />
       </main>
       <Footer />

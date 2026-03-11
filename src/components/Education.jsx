@@ -1,3 +1,6 @@
+import techcrush from '../img/techcrush.jpeg'
+import sla from '../img/sla.jpeg'
+
 function Education() {
   return (
     <section id="education" className="space-y-8">
@@ -7,20 +10,12 @@ function Education() {
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandBlue text-white text-sm font-semibold">
-            BA
-          </div>
-          <div>
-            <h3 className="text-base font-semibold text-slate-900">B.A. English Language (In View)</h3>
-            <p className="text-sm text-slate-700">Lagos State University of Education (LASUED) — Lagos, Nigeria</p>
-            <p className="mt-2 text-sm text-slate-700">
-              October 2024 – Present
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandGold text-xs font-semibold text-slate-900">
-            VA
+          <div className="h-vh w-full bg-slate-200">
+            <img
+              src={techcrush}
+              alt="Attendance tracker in Google Sheets"
+              className="h-full w-full"
+            />
           </div>
           <div>
             <h3 className="text-base font-semibold text-slate-900">Virtual Assistant Training Scholarship</h3>
@@ -31,14 +26,30 @@ function Education() {
           </div>
         </div>
         <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandBlue text-white text-sm font-semibold">
-            EV
+          <div className="h-vh w-full bg-slate-200">
+            <img
+              src={sla}
+              alt="Attendance tracker in Google Sheets"
+              className="h-full w-full"
+            />
           </div>
           <div>
             <h3 className="text-base font-semibold text-slate-900"> Executive Virtual Assistance Certification</h3>
             <p className="text-sm text-slate-700">She Leads Africa (SLA) BoostHer Program</p>
             <p className="mt-2 text-sm text-slate-700">
               October 2025
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+          <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandBlue text-white text-sm font-semibold">
+            BA
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-slate-900">B.A. English Language (In View)</h3>
+            <p className="text-sm text-slate-700">Lagos State University of Education (LASUED) — Lagos, Nigeria</p>
+            <p className="mt-2 text-sm text-slate-700">
+              October 2024 – Present
             </p>
           </div>
         </div>
