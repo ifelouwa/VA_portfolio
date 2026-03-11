@@ -1,293 +1,252 @@
 function Skills() {
   const getToolIcon = (tool) => {
+    if (tool === 'Google Workspace') {
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 256 262">
+	        <path fill="#4285f4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622l38.755 30.023l2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" />
+	        <path fill="#34a853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055c-34.523 0-63.824-22.773-74.269-54.25l-1.531.13l-40.298 31.187l-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" />
+	        <path fill="#fbbc05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82c0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602z" />
+	        <path fill="#eb4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0C79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" />
+        </svg>
+      )
+    }
+
+    if (tool === 'ClickUp') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <path d="M12 3L4 8v8l8 5 8-5V8l-8-5z" fill="#7B68EE" />
+          <path d="M12 7v10m-4-4l4 4 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Buffer') {
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 256 262">
+	        <path d="M136.442 1.515c38.04 17.645 76.703 35.867 114.69 53.622c2.027.948 4.685 1.593 4.688 4.463c.004 2.875-2.65 3.515-4.682 4.464a76683 76683 0 0 1-114.45 53.437c-5.814 2.707-11.784 2.672-17.605-.041A104727 104727 0 0 1 4.403 63.907c-1.967-.92-4.442-1.616-4.365-4.413c.072-2.617 2.44-3.297 4.332-4.182C42.747 37.38 81.513 19.166 119.94 1.344c4.062-1.881 12.27-1.753 16.502.17m-8.562 260.047c-2.767 0-4.84-1.05-8.794-2.53c-38.185-17.712-76.323-35.526-114.458-53.346c-2.027-.947-4.652-1.616-4.628-4.504c.025-2.873 2.652-3.507 4.68-4.471c6.325-3.008 12.683-5.948 19.038-8.893c6.35-2.943 12.657-2.902 19.025.083c25.28 11.85 50.586 23.64 75.876 35.465c6.28 2.936 12.506 2.875 18.778-.063a70166 70166 0 0 1 76.108-35.573c5.992-2.797 12.063-2.875 18.083-.147c6.77 3.067 13.49 6.244 20.214 9.405c.997.469 2.008.998 2.843 1.7c1.797 1.515 1.821 3.566-.013 5.035c-1.115.893-2.449 1.55-3.757 2.16c-37.827 17.674-75.649 35.358-113.527 52.922c-2.944 1.364-6.7 2.757-9.468 2.757m-.134-70.823c-1.265 0-6.18-1.342-8.978-2.641c-38.028-17.66-76.005-35.43-113.985-53.191c-2.04-.954-4.7-1.57-4.753-4.412c-.056-3.015 2.728-3.618 4.828-4.617c6.396-3.045 12.81-6.056 19.247-9.014c6.104-2.804 12.218-2.738 18.317.11c25.535 11.928 51.07 23.858 76.623 35.746c5.915 2.752 11.922 2.73 17.842-.025c25.627-11.933 51.236-23.903 76.86-35.844c5.924-2.761 11.91-2.76 17.838-.054c6.756 3.082 13.47 6.257 20.191 9.414c.923.434 1.87.892 2.66 1.52c2.04 1.62 2.023 3.759-.04 5.38c-.794.625-1.737 1.086-2.66 1.518c-38.37 17.937-76.732 35.89-115.148 53.725c-2.64 1.227-7.578 2.385-8.842 2.385" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Meta Business Suite') {
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 256 171">
+          <defs>
+            <linearGradient id="SVGisLtEM7Q" x1="13.878%" x2="89.144%" y1="55.934%" y2="58.694%">
+              <stop offset="0%" stop-color="#0064e1" />
+              <stop offset="40%" stop-color="#0064e1" />
+              <stop offset="83%" stop-color="#0073ee" />
+              <stop offset="100%" stop-color="#0082fb" />
+            </linearGradient>
+            <linearGradient id="SVGkdv8EcyD" x1="54.315%" x2="54.315%" y1="82.782%" y2="39.307%">
+              <stop offset="0%" stop-color="#0082fb" />
+              <stop offset="100%" stop-color="#0064e0" />
+            </linearGradient>
+          </defs>
+          <path fill="#0081fb" d="M27.651 112.136c0 9.775 2.146 17.28 4.95 21.82c3.677 5.947 9.16 8.466 14.751 8.466c7.211 0 13.808-1.79 26.52-19.372c10.185-14.092 22.186-33.874 30.26-46.275l13.675-21.01c9.499-14.591 20.493-30.811 33.1-41.806C161.196 4.985 172.298 0 183.47 0c18.758 0 36.625 10.87 50.3 31.257C248.735 53.584 256 81.707 256 110.729c0 17.253-3.4 29.93-9.187 39.946c-5.591 9.686-16.488 19.363-34.818 19.363v-27.616c15.695 0 19.612-14.422 19.612-30.927c0-23.52-5.484-49.623-17.564-68.273c-8.574-13.23-19.684-21.313-31.907-21.313c-13.22 0-23.859 9.97-35.815 27.75c-6.356 9.445-12.882 20.956-20.208 33.944l-8.066 14.289c-16.203 28.728-20.307 35.271-28.408 46.07c-14.2 18.91-26.324 26.076-42.287 26.076c-18.935 0-30.91-8.2-38.325-20.556C2.973 139.413 0 126.202 0 111.148z" />
+          <path fill="url(#SVGisLtEM7Q)" d="M21.802 33.206C34.48 13.666 52.774 0 73.757 0C85.91 0 97.99 3.597 110.605 13.897c13.798 11.261 28.505 29.805 46.853 60.368l6.58 10.967c15.881 26.459 24.917 40.07 30.205 46.49c6.802 8.243 11.565 10.7 17.752 10.7c15.695 0 19.612-14.422 19.612-30.927l24.393-.766c0 17.253-3.4 29.93-9.187 39.946c-5.591 9.686-16.488 19.363-34.818 19.363c-11.395 0-21.49-2.475-32.654-13.007c-8.582-8.083-18.615-22.443-26.334-35.352l-22.96-38.352C118.528 64.08 107.96 49.73 101.845 43.23c-6.578-6.988-15.036-15.428-28.532-15.428c-10.923 0-20.2 7.666-27.963 19.39z" />
+          <path fill="url(#SVGkdv8EcyD)" d="M73.312 27.802c-10.923 0-20.2 7.666-27.963 19.39c-10.976 16.568-17.698 41.245-17.698 64.944c0 9.775 2.146 17.28 4.95 21.82L9.027 149.482C2.973 139.413 0 126.202 0 111.148C0 83.772 7.514 55.24 21.802 33.206C34.48 13.666 52.774 0 73.757 0z" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Canva') {
+      return (
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <rect width="24" height="24" rx="4" fill="#00C4CC" />
+          <path d="M7 16V8h2l3 5 3-5h2v8h-2v-5l-3 5-3-5v5H7z" fill="white" />
+        </svg>
+      )
+    }
+
+    if (tool === 'Chat GPT') {
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 256 260">
+	        <path d="M239.184 106.203a64.72 64.72 0 0 0-5.576-53.103C219.452 28.459 191 15.784 163.213 21.74A65.586 65.586 0 0 0 52.096 45.22a64.72 64.72 0 0 0-43.23 31.36c-14.31 24.602-11.061 55.634 8.033 76.74a64.67 64.67 0 0 0 5.525 53.102c14.174 24.65 42.644 37.324 70.446 31.36a64.72 64.72 0 0 0 48.754 21.744c28.481.025 53.714-18.361 62.414-45.481a64.77 64.77 0 0 0 43.229-31.36c14.137-24.558 10.875-55.423-8.083-76.483m-97.56 136.338a48.4 48.4 0 0 1-31.105-11.255l1.535-.87l51.67-29.825a8.6 8.6 0 0 0 4.247-7.367v-72.85l21.845 12.636c.218.111.37.32.409.563v60.367c-.056 26.818-21.783 48.545-48.601 48.601M37.158 197.93a48.35 48.35 0 0 1-5.781-32.589l1.534.921l51.722 29.826a8.34 8.34 0 0 0 8.441 0l63.181-36.425v25.221a.87.87 0 0 1-.358.665l-52.335 30.184c-23.257 13.398-52.97 5.431-66.404-17.803M23.549 85.38a48.5 48.5 0 0 1 25.58-21.333v61.39a8.29 8.29 0 0 0 4.195 7.316l62.874 36.272l-21.845 12.636a.82.82 0 0 1-.767 0L41.353 151.53c-23.211-13.454-31.171-43.144-17.804-66.405zm179.466 41.695l-63.08-36.63L161.73 77.86a.82.82 0 0 1 .768 0l52.233 30.184a48.6 48.6 0 0 1-7.316 87.635v-61.391a8.54 8.54 0 0 0-4.4-7.213m21.742-32.69l-1.535-.922l-51.619-30.081a8.39 8.39 0 0 0-8.492 0L99.98 99.808V74.587a.72.72 0 0 1 .307-.665l52.233-30.133a48.652 48.652 0 0 1 72.236 50.391zM88.061 139.097l-21.845-12.585a.87.87 0 0 1-.41-.614V65.685a48.652 48.652 0 0 1 79.757-37.346l-1.535.87l-51.67 29.825a8.6 8.6 0 0 0-4.246 7.367zm11.868-25.58L128.067 97.3l28.188 16.218v32.434l-28.086 16.218l-28.188-16.218z" />
+        </svg>
+      )
+    }
+
     if (tool === 'Google Drive') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path
-            d="M9 4.75 5 11.75l2.25 3.5h4L15 11.75l-2.25-7"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <path d="M9 3L3 13l3 5h12l3-10L9 3z" fill="#4285F4" />
+          <path d="M3 13l6 10h12l-6-10H3z" fill="#34A853" />
+          <path d="M15 13l6-10H9l6 10z" fill="#FBBC05" />
         </svg>
       )
     }
 
     if (tool === 'Google Docs') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path
-            d="M9 4.75h5.25L18 8.5v9.75H9z"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M10.5 11h4M10.5 13.25h3M10.5 15.5h2.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <path d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" fill="#4285F4" />
+          <path d="M14 2v6h6" fill="#A1C2FA" />
+          <path d="M8 12h8m-8 3h8m-8 3h5" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       )
     }
 
     if (tool === 'Google Sheets') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <rect
-            x="6"
-            y="5.5"
-            width="12"
-            height="13"
-            rx="1.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M9 5.5v13M13 5.5v13M6 10h12M6 13.5h12"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z" fill="#0F9D58" />
+          <path d="M8 8h8v8H8V8z" fill="white" opacity="0.2" />
+          <path d="M8 11h8M8 14h8M11 8v8M14 8v8" stroke="white" strokeWidth="1" />
         </svg>
       )
     }
 
+
+
     if (tool === 'Trello') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <rect x="6" y="6" width="4" height="10" rx="1" fill="currentColor" />
-          <rect x="14" y="6" width="4" height="6" rx="1" fill="currentColor" opacity="0.5" />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <rect width="24" height="24" rx="3" fill="#0079BF" />
+          <rect x="4" y="4" width="7" height="12" rx="1" fill="white" />
+          <rect x="13" y="4" width="7" height="7" rx="1" fill="white" opacity="0.6" />
         </svg>
       )
     }
 
     if (tool === 'Airtable') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path d="M12 3l9 5v8l-9 5-9-5V8l9-5z" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M12 12l9-5M12 12l-9-5M12 12v9" stroke="currentColor" strokeWidth="1.5" />
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 256 215">
+	        <path fill="#ffbf00" d="M114.259 2.701L18.86 42.176c-5.305 2.195-5.25 9.73.089 11.847l95.797 37.989a35.54 35.54 0 0 0 26.208 0l95.799-37.99c5.337-2.115 5.393-9.65.086-11.846L141.442 2.7a35.55 35.55 0 0 0-27.183 0" />
+	        <path fill="#26b5f8" d="M136.35 112.757v94.902c0 4.514 4.55 7.605 8.746 5.942l106.748-41.435a6.39 6.39 0 0 0 4.035-5.941V71.322c0-4.514-4.551-7.604-8.747-5.941l-106.748 41.434a6.39 6.39 0 0 0-4.035 5.942" />
+	        <path fill="#ed3049" d="m111.423 117.654l-31.68 15.296l-3.217 1.555L9.65 166.548C5.411 168.593 0 165.504 0 160.795V71.72c0-1.704.874-3.175 2.046-4.283a7.3 7.3 0 0 1 1.618-1.213c1.598-.959 3.878-1.215 5.816-.448l101.41 40.18c5.155 2.045 5.56 9.268.533 11.697" />
+	        <path fill-opacity="0.25" d="m111.423 117.654l-31.68 15.296L2.045 67.438a7.3 7.3 0 0 1 1.618-1.213c1.598-.959 3.878-1.215 5.816-.448l101.41 40.18c5.155 2.045 5.56 9.268.533 11.697" />
         </svg>
       )
     }
 
     if (tool === 'Notion') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M7 9v6M7 9l3 6M13 9v6M13 9l3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <path d="M4 4h16v16H4V4z" fill="#000000" />
+          <path d="M7 7v10M7 7l5 10M17 7v10M17 7l-5 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       )
     }
 
     if (tool === 'Tally') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path d="M5 5h14v14H5z" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M9 8v8M12 8v8M15 8v8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <rect width="24" height="24" rx="4" fill="#000000" />
+          <path d="M8 7v10M12 7v10M16 7v10" stroke="white" strokeWidth="2" strokeLinecap="round" />
         </svg>
       )
     }
 
     if (tool === 'Calendly') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="12" cy="14" r="2" fill="currentColor" />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" fill="#006BFF" />
+          <path d="M8 8h8v8H8V8z" fill="white" />
+          <path d="M11 11h2v2h-2z" fill="#006BFF" />
         </svg>
       )
     }
 
     if (tool === 'Zoom') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <rect
-            x="4.75"
-            y="7"
-            width="9.5"
-            height="8.5"
-            rx="2"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M14.25 10.25 19 8.5v7l-4.75-1.75"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <rect width="24" height="24" rx="6" fill="#2D8CFF" />
+          <path d="M6 9h8a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2a2 2 0 012-2z" fill="white" />
+          <path d="M16 11l4-2.5v7l-4-2.5" fill="white" />
         </svg>
       )
     }
 
     if (tool === 'CapCut') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <rect
-            x="5"
-            y="7"
-            width="14"
-            height="10"
-            rx="2"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M7 9.5h6M7 12h4.5M7 14.5h6"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 512 139">
+          <path fill="#fff" d="M116.971 2.475h278.058c62.971 0 114.494 51.522 114.494 114.494v275.722c0 62.971-51.523 114.493-114.494 114.493H116.971c-62.972 0-114.494-51.522-114.494-114.493V116.969c0-62.972 51.522-114.494 114.494-114.494z"/>
+          <path fill="#999" fill-rule="nonzero" d="M116.97-.001h278.06C459.366-.001 512 52.633 512 116.969v275.722c0 64.335-52.634 116.969-116.97 116.969H116.97C52.636 509.66 0 457.026 0 392.691V116.969C0 52.633 52.636-.001 116.97-.001zm278.06 4.953H116.97C55.364 4.952 4.953 55.363 4.953 116.969v275.722c0 61.605 50.411 112.017 112.017 112.017h278.06c61.607 0 112.017-50.411 112.017-112.017V116.969c0-61.607-50.41-112.017-112.017-112.017z"/>
+          <path fill="#fff" fill-rule="nonzero" d="M109.095 181.505c-.123 8.897 0 17.813 0 26.71a5.41 5.41 0 003.225 4.917 23898.407 23898.407 0 0084.108 41.646c-27.832 13.672-55.563 27.526-83.353 41.259a5.938 5.938 0 00-4.081 4.876v26.771c1.854 18.195 15.823 32.817 33.913 35.503 3.509.326 7.02.266 10.529.266l155.85.001a45.08 45.08 0 0011.224-.92 40.825 40.825 0 0026.137-20.015 63.699 63.699 0 004.288-11.226c15.997 8.325 32.341 16.079 48.462 24.179.385.291.857.447 1.343.447a2.266 2.266 0 002.265-2.265v-.016-27.669a4.695 4.695 0 00-3.143-4.079l-135.323-67.112c45.203-22.431 90.412-44.876 135.63-67.335a4.573 4.573 0 002.754-4.082v-27.628a2.183 2.183 0 00-3.142-1.673l-49.135 24.363a42.189 42.189 0 00-6.388-14.917 40.613 40.613 0 00-30.097-17.422l-167.133-.001c-19.615.91-35.688 15.918-37.933 35.424v-.002z"/>
+          <path fill="#fff" fill-rule="nonzero" d="M140.049 181.689a10.082 10.082 0 019.345-5.55h161.545l.106-.001c5.066 0 9.368 3.72 10.096 8.734.205 2.714.102 5.428 0 8.162l-90.597 44.891c-30.608-15.018-61.03-30.22-91.535-45.339.142-3.632-.633-7.53 1.04-10.897zM139.009 317.095a24846.007 24846.007 0 0191.351-45.319c30.322 14.773 60.521 29.954 90.802 44.89-.204 3.918.755 8.162-1.305 11.773a10.085 10.085 0 01-8.755 5.08h-.082l-161.605.002-.277.002a10.202 10.202 0 01-9.007-5.411c-1.796-3.386-.98-7.345-1.122-11.017z"/>
+          <path fill-rule="nonzero" d="M109.095 181.505c2.223-19.532 18.316-34.578 37.955-35.483l167.194-.001a40.612 40.612 0 0130.095 17.427 42.152 42.152 0 016.39 14.915l49.135-24.364a2.185 2.185 0 013.141 1.674v27.628l.001.096a4.571 4.571 0 01-2.837 4.229 177620.936 177620.936 0 00-135.63 67.336l135.324 66.948a4.695 4.695 0 013.142 4.08v27.685a2.266 2.266 0 01-3.613 1.821c-16.12-8.162-32.464-15.854-48.462-24.18a63.503 63.503 0 01-4.282 11.225 40.813 40.813 0 01-26.098 20.135 44.994 44.994 0 01-11.221.919l-155.833.003c-3.51 0-7.04 0-10.53-.266-18.089-2.705-32.049-17.363-33.869-35.565v-26.77a5.935 5.935 0 014.08-4.879c27.791-13.732 55.521-27.587 83.353-41.258a32412.61 32412.61 0 00-84.17-41.748 5.41 5.41 0 01-3.223-4.918c-.042-8.876-.185-17.792-.042-26.689zm30.975.184c-1.674 3.367-.898 7.263-1.041 10.896 30.608 15.12 60.99 30.321 91.536 45.339 30.185-14.963 60.384-29.927 90.596-44.89 0-2.714.123-5.428 0-8.162a10.203 10.203 0 00-10.096-8.734h-.106l-161.565.001a10.082 10.082 0 00-9.345 5.55h.021zm-1.041 135.406c.142 3.673-.654 7.631 1.122 11.039a10.204 10.204 0 009.284 5.405l161.667.002.081-.001c3.618 0 6.961-1.94 8.754-5.081 2.04-3.57 1.102-7.855 1.305-11.773-30.26-14.936-60.48-30.118-90.801-44.89a43915.126 43915.126 0 00-91.432 45.299h.02z"/>
         </svg>
       )
     }
     
     if (tool === 'Zapier') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <rect
-            x="5"
-            y="6"
-            width="14"
-            height="12"
-            rx="3"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M10 9.5 14 12l-4 2.5z"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 512 139">
+          <path fill="#201515" d="m120.218 95.07l-.072-.228l45.523-41.675v-20.08H92.634v20.08h43.624l.072.192L91.251 95.07v20.08h75.152V95.07zm91.022-63.896q-12.636 0-20.597 3.812a27.03 27.03 0 0 0-11.952 10.473a38.1 38.1 0 0 0-5.014 15.15l22.16 3.115q1.204-7.082 4.81-10.04a14.7 14.7 0 0 1 8.5-2.958l1.023.012q6.747 0 9.787 3.607c2.01 2.405 3.032 5.735 3.032 10.124v2.189H201.68q-16.268 0-23.375 7.214t-7.094 19.046q0 12.12 7.094 18.037q7.095 5.915 17.844 5.88q13.336 0 20.513-9.175a34.1 34.1 0 0 0 5.928-12.637h.806l3.054 20.08h20.08v-50.85q0-15.765-8.308-24.421q-8.31-8.658-26.983-8.658m7.023 62.682c-3.187 2.658-7.36 3.98-12.554 3.98q-6.42 0-8.921-2.248a7.35 7.35 0 0 1-2.514-5.712a7.5 7.5 0 0 1 2.08-5.543a7.73 7.73 0 0 1 4.93-2.083l21.74.003v1.383a12.76 12.76 0 0 1-4.761 10.22m149.689-60.77h-23.723v82.077h23.723zm140.069 0q-10.053 0-15.849 7.094q-4.158 5.099-6.323 15.067h-.698l-3.103-22.16h-20.26v82.064h23.725V73.066q0-7.959 3.727-12.204q3.728-4.245 13.754-4.245H512v-23.53zm-69.777 2.682q-8.307-4.942-20.957-4.93q-19.913 0-31.166 11.338q-11.256 11.34-11.255 31.263a49.8 49.8 0 0 0 5.11 23.195a36.83 36.83 0 0 0 14.549 15.33q9.425 5.448 22.426 5.46q11.241 0 18.78-3.463a30.2 30.2 0 0 0 11.953-9.44a41.2 41.2 0 0 0 6.492-13.418l-20.44-5.724a18.95 18.95 0 0 1-4.81 8.321q-3.465 3.463-11.603 3.463q-9.68 0-14.43-5.543c-2.297-2.67-3.74-6.481-4.376-11.423h55.972c.23-2.309.35-4.245.35-5.808v-5.11a45.6 45.6 0 0 0-4.148-19.912a31.17 31.17 0 0 0-12.447-13.6M416.602 50.4q14.428 0 16.363 14.2h-34.028a19.55 19.55 0 0 1 3.812-8.669q4.679-5.543 13.853-5.531M356.348.008a13.32 13.32 0 0 0-9.704 3.727a12.87 12.87 0 0 0-3.806 8.553l-.005 1.066a13.04 13.04 0 0 0 3.817 9.695a13.04 13.04 0 0 0 8.625 3.804l1.073.005a12.83 12.83 0 0 0 9.62-3.812a13.2 13.2 0 0 0 3.712-8.623l.004-1.069a12.75 12.75 0 0 0-.847-5.195a12.8 12.8 0 0 0-2.872-4.412A12.77 12.77 0 0 0 356.36.02zm-49.01 30.83q-12.12 0-19.479 7.61q-5.448 5.64-7.996 16.835h-.757l-3.103-22.16h-20.26v105.62h23.722V95.239h.866a44.3 44.3 0 0 0 3.03 8.417a23.9 23.9 0 0 0 9.44 10.557a27.7 27.7 0 0 0 14.02 3.38q14.897 0 22.688-11.604q7.793-11.604 7.793-32.381q-.001-20.069-7.538-31.42q-7.54-11.35-22.426-11.35m2.405 59.471q-3.873 5.612-11.83 5.985l-1.157.027a15.3 15.3 0 0 1-12.72-5.807q-4.607-5.784-4.594-15.836v-1.563q0-10.21 4.593-15.632q4.593-5.423 12.72-5.363q8.996 0 13.072 5.712q4.077 5.712 4.076 15.932q.026 10.569-4.137 16.545z" />
+          <path fill="#ff4f00" d="M82.077 95.071H0v20.104h82.077z" />
         </svg>
       )
     }
 
     if (tool === 'Slack') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path
-            d="M9 5.5v2.5M9 10.25v2.5M9 7.75h-2.5M9 12.5h-2.5M15 5.5v2.5M15 10.25v2.5M15 7.75h2.5M15 12.5h2.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 256 256">
+	        <path fill="#e01e5a" d="M53.841 161.32c0 14.832-11.987 26.82-26.819 26.82S.203 176.152.203 161.32c0-14.831 11.987-26.818 26.82-26.818H53.84zm13.41 0c0-14.831 11.987-26.818 26.819-26.818s26.819 11.987 26.819 26.819v67.047c0 14.832-11.987 26.82-26.82 26.82c-14.83 0-26.818-11.988-26.818-26.82z" />
+	        <path fill="#36c5f0" d="M94.07 53.638c-14.832 0-26.82-11.987-26.82-26.819S79.239 0 94.07 0s26.819 11.987 26.819 26.819v26.82zm0 13.613c14.832 0 26.819 11.987 26.819 26.819s-11.987 26.819-26.82 26.819H26.82C11.987 120.889 0 108.902 0 94.069c0-14.83 11.987-26.818 26.819-26.818z" />
+	        <path fill="#2eb67d" d="M201.55 94.07c0-14.832 11.987-26.82 26.818-26.82s26.82 11.988 26.82 26.82s-11.988 26.819-26.82 26.819H201.55zm-13.41 0c0 14.832-11.988 26.819-26.82 26.819c-14.831 0-26.818-11.987-26.818-26.82V26.82C134.502 11.987 146.489 0 161.32 0s26.819 11.987 26.819 26.819z" />
+	        <path fill="#ecb22e" d="M161.32 201.55c14.832 0 26.82 11.987 26.82 26.818s-11.988 26.82-26.82 26.82c-14.831 0-26.818-11.988-26.818-26.82V201.55zm0-13.41c-14.831 0-26.818-11.988-26.818-26.82c0-14.831 11.987-26.818 26.819-26.818h67.25c14.832 0 26.82 11.987 26.82 26.819s-11.988 26.819-26.82 26.819z" />
         </svg>
       )
     }
 
     if (tool === 'Telegram') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <circle
-            cx="12"
-            cy="12"
-            r="7"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M9 12.25 14.75 9.5 13 15l-2.25-1.75L11 11"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="#26A5E4" />
+          <path d="M17 8l-9.5 4.5 2 2.5 1-1 4 3 2.5-9z" fill="white" />
         </svg>
       )
     }
 
     if (tool === 'Google Calendar') {
       return (
-        <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-          <path
-            d="M6 10h7.5M6 14h7.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <path
-            d="M13.5 9 16 10 13.5 11M13.5 13 16 14l-2.5 1"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+        <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden="true">
+          <rect width="24" height="24" rx="4" fill="#4285F4" />
+          <path d="M7 7h10v10H7V7z" fill="white" />
+          <path d="M12 10v4m-2-2h4" stroke="#4285F4" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       )
     }
-
-    return (
-      <svg viewBox="0 0 24 24" className="h-8 w-8 text-brandBlue" aria-hidden="true">
-        <circle
-          cx="12"
-          cy="8.5"
-          r="2.25"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M7.75 17.25a4.25 4.25 0 0 1 8.5 0"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    )
   }
-  const coreSkills = [
-    'Google Workspace',
-    'Project & task management',
-    'File management',
-    'Database management & automation',
-    'Documentation & knowledge management',
-    'Video conferencing',
-    'Form building & data collection',
+  const softSkills = [
     'Time management',
-    'Scheduling & booking management',
-    'Cross-platform workflow automation',
-    'Invoicing and reporting',
     'Team collaboration',
+    'Adaptability',
+    'Problem-solving',
+    'Confidentiality',
+    'Attention to detail',
+    'Organization & planning',
+  ]
+
+  const technicalSkills = [
+    'Email & Calendar Management',
+    'Project & task management',
+    'File & database management',
+    'Workflow automation',
+    'Documentation & reporting',
+    'Form building & data collection',
+    'Scheduling & booking',
+    'Itinerary Management',
   ]
 
   const tools = [
-    'Google Drive',
-    'Google Docs',
-    'Google Sheets',
-    'Trello',
-    'Airtable',
-    'Notion',
+    'Google Workspace',   
     'Zoom',
-    'Tally',
-    'Zapier',
+    'CapCut',
+    'Slack',
+    'Trello', 
+    'ClickUp',
+    'Airtable', 
+    'Buffer', 
+    'Meta Business Suite',
     'Calendly',
-    'Telegram',
-    'Google Calendar',
+    'Canva',
+    'Zapier',
+    'Chat GPT'
   ]
+
+
 
   return (
     <section id="skills" className="space-y-8">
@@ -297,12 +256,12 @@ function Skills() {
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div className="space-y-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <h3 className="text-base font-semibold text-slate-900">Core skills</h3>
+          <h3 className="text-base font-semibold text-slate-900 uppercase tracking-wide text-brandBlue">Soft skills</h3>
           <div className="flex flex-wrap gap-2">
-            {coreSkills.map((item) => (
+            {softSkills.map((item) => (
               <span
                 key={item}
-                className="rounded-full bg-brandBlue px-3 py-1 text-sm font-medium text-white"
+                className="rounded-full bg-brandBlue/5 border border-brandBlue/20 px-3 py-1 text-sm font-medium text-brandBlue"
               >
                 {item}
               </span>
@@ -310,21 +269,34 @@ function Skills() {
           </div>
         </div>
         <div className="space-y-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-          <h3 className="text-base font-semibold text-slate-900">Tools</h3>
-          <div className="grid grid-cols-3 gap-3 text-sm text-slate-700 sm:grid-cols-3">
-            {tools.map((tool) => (
-              <div
-                key={tool}
-                className="flex flex-col items-start gap-1 rounded-lg border border-slate-100 bg-slate-50 px-3 py-2"
+          <h3 className="text-base font-semibold text-slate-900 uppercase tracking-wide text-brandBlue">Technical skills</h3>
+          <div className="flex flex-wrap gap-2">
+            {technicalSkills.map((item) => (
+              <span
+                key={item}
+                className="rounded-full bg-brandBlue px-3 py-1 text-sm font-medium text-white shadow-sm"
               >
-                <span className="h-1 w-6 rounded-full bg-brandBlue/60" />
-                <span className="inline-flex items-center gap-2">
-                  {getToolIcon(tool)}
-                  <span>{tool}</span>
-                </span>
-              </div>
+                {item}
+              </span>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="space-y-3 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+        <h3 className="text-base font-semibold text-slate-900 uppercase tracking-wide text-brandBlue">Tools & Technologies</h3>
+        <div className="grid grid-cols-2 gap-3 text-sm text-slate-700 sm:grid-cols-3 lg:grid-cols-4">
+          {tools.map((tool) => (
+            <div
+              key={tool}
+              className="flex flex-col items-start gap-1 rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 transition-colors hover:border-brandBlue/20"
+            >
+              <span className="h-1 w-6 rounded-full bg-brandBlue/60" />
+              <span className="inline-flex items-center gap-2">
+                {getToolIcon(tool)}
+                <span>{tool}</span>
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
